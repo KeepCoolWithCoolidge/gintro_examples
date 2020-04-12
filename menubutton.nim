@@ -43,7 +43,7 @@ proc appActivate(app: Application) =
   let aboutAction = newSimpleAction("about", nil)
   discard aboutAction.connect("activate", aboutCallback)
   cast[ActionMap](window).addAction(aboutAction)
-  
+
   window.showAll()
 
 proc main =

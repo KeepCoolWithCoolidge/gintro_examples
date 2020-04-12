@@ -11,8 +11,8 @@ proc pushItem(button: Button, statusBar: StatusBar) =
   # Count is used to keep track of the amount of items
   # the user is pushing/popping
   var count {.global.} = 1;
-  
-  # The output is guaranteed in this case to not exceed 20 characters, 
+
+  # The output is guaranteed in this case to not exceed 20 characters,
   # and the result is stored into the 'holdOutput' variable
   var holdOutput = newString(20)
   let str = "Item " & $count
@@ -49,7 +49,7 @@ proc appActivate(app: Application) =
   # Connecting the clicked signals to the corresponding callback functions
   discard pushButton.connect("clicked", pushItem, statusBar)
   discard popButton.connect("clicked", popItem, statusBar)
-  
+
   # Attach the grid holding the child widgets onto the window, and show all
   window.add(grid)
   window.showAll()

@@ -1,7 +1,7 @@
 import gintro / [gtk, gobject, gio, glib]
 
-# This is the callback function. It is a handler function which 
-# reacts to the signal. In this case, it will cause the button label's 
+# This is the callback function. It is a handler function which
+# reacts to the signal. In this case, it will cause the button label's
 # string to reverse.
 proc buttonClicked(button: Button) =
   let oldLabel = button.label

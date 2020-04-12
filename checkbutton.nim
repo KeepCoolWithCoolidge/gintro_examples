@@ -10,7 +10,7 @@ proc appActivate(app: Application) =
   let window = newApplicationWindow(app)
   window.title = "CheckButton Example"
   window.defaultSize = (300, 100)
-  
+
   let checkbutton = newCheckButtonWithLabel("Show Title")
   checkbutton.active = true
   checkbutton.connect("toggled", toggledCb, window)

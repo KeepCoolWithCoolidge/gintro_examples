@@ -6,8 +6,8 @@ proc appActivate(app: Application) =
   window.title = "Welcome to Nim"
   window.defaultSize = (200, 100)
 
-  # Create a label and set its alignment. Setting the line wrap to TRUE makes 
-  # the label break lines if the text exceeds the widget's size. When set to 
+  # Create a label and set its alignment. Setting the line wrap to TRUE makes
+  # the label break lines if the text exceeds the widget's size. When set to
   # FALSE the text gets cut off by the edge of the widget
   let label = newLabel("Hello Nim!")
   label.setJustify(Justification.center)

@@ -1,8 +1,8 @@
 import gintro / [gtk, gobject, gio]
 
-# This is the callback function. It is a handler function 
-# which reacts to the signal. In this case, it will cause the 
-# spinner to start and stop according to how many times the user 
+# This is the callback function. It is a handler function
+# which reacts to the signal. In this case, it will cause the
+# spinner to start and stop according to how many times the user
 # presses the button.
 proc buttonToggledCb(button: ToggleButton, userData: Spinner) =
   if button.getActive():
