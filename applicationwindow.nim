@@ -1,3 +1,5 @@
+# Based on https://developer.gnome.org/gnome-devel-demos/stable/spinner.c.html.en
+
 import gintro / [gtk, gobject, gio]
 
 proc appActivate(app: Application) =

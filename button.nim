@@ -1,3 +1,5 @@
+# Based on https://developer.gnome.org/gnome-devel-demos/stable/button.c.html.en
+
 import gintro / [gtk, gobject, gio, glib]
 
 # This is the callback function. It is a handler function which

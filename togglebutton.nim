@@ -1,3 +1,5 @@
+# Based on https://developer.gnome.org/gnome-devel-demos/stable/togglebutton.c.html.en
+
 import gintro / [gtk, gobject, gio]
 
 # This is the callback function. It is a handler function

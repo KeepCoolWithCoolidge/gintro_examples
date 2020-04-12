@@ -1,3 +1,5 @@
+# Based on https://developer.gnome.org/gnome-devel-demos/stable/menubutton.c.html.en
+
 import gintro / [gtk, gobject, gio, glib]
 
 proc aboutCallback(simple: SimpleAction, parameter: Variant) =

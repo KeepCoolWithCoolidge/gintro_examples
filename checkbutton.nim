@@ -1,3 +1,5 @@
+# Based on https://developer.gnome.org/gnome-devel-demos/stable/checkbutton.c.html.en
+
 import gintro / [gtk, gobject, gio]
 
 proc toggledCb(button: CheckButton, userData: ApplicationWindow) =

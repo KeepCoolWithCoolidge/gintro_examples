@@ -1,3 +1,5 @@
+# Based on https://developer.gnome.org/gnome-devel-demos/stable/radiobutton.c.html.en
+
 import gintro / [gtk, gobject, gio]
 
 # Signal handler for the "toggled" signal of the RadioButton
