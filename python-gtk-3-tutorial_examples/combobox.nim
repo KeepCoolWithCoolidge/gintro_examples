@@ -1,4 +1,4 @@
-# Based on https://developer.gnome.org/gnome-devel-demos/stable/GtkApplicationWindow.c.html.en
+# Based on https://python-gtk-3-tutorial.readthedocs.io/en/latest/combobox.html#example
 
 import gintro / [gtk, gobject, gio]
 import strformat
