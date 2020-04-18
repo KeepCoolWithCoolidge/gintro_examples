@@ -67,10 +67,10 @@ proc appActivate(app: Application) =
   discard vString.init(typeFromName("gchararray"))
   let nameStore = newListStore(2, addr nameStoreTypes)
   
-  for element in names:
+  for name in names:
     nameStore.append(nameStoreIter)
-    vInt.int = element[0]
-    vString.string = element[1]
+    vInt.int = name[0]
+    vString.string = name[1]
     nameStore.setValue(nameStoreIter, 0, vInt)
     nameStore.setValue(nameStoreIter, 1, vString)
 
@@ -85,9 +85,9 @@ proc appActivate(app: Application) =
   var countryStoreIter: TreeIter
   let countryStore = newListStore(1, addr countryStoreTypes)
   
-  for element in countries:
+  for country in countries:
     countryStore.append(countryStoreIter)
-    vString.string = element
+    vString.string = country
     countryStore.setValue(countryStoreIter, 0, vString)
 
   let countryCombo = newComboBoxWithModel(countryStore)
